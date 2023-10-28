@@ -5,7 +5,7 @@ import ReadPosts from './pages/ReadPosts'
 import CreatePost from './pages/CreatePost'
 import EditPost from './pages/EditPost'
 import { Link } from 'react-router-dom'
-
+import { supabase } from './client'
 
 const App = () => {
   
@@ -46,7 +46,6 @@ const App = () => {
       element: <CreatePost />
     }
   ]);
-
   return ( 
 
     <div className="App">
